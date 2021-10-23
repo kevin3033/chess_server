@@ -2,15 +2,25 @@
 <html lang="pt-br" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>chess game</title>
-        <link rel="stylesheet" href="./style.css">
-
+        <title>jogo de xadrez</title>
+        <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
-        <div id="barra" class="barrapreta">Oponente</div><br>
-        <div class="table"></div><br>
-        <div id="barra"  class="barrabranca">Você</div>
-        <script src="./scripts/begin.js" charset="utf-8"></script>
-        <script src="./scripts/main.js" charset="utf-8"></script>
+        <form class="container" action="sala" method="get">
+            <div class="titlediv">
+                <h1>Jogo de xadrez</h1>
+            </div>
+            <div class="salas">
+                <h3>0 salas</h3>
+            </div>
+            <div class="inputs">
+                <input type="text" class='subname' name="nome" placeholder="digite seu nickname">
+                <input type="text" name="descricao" class='subdes' placeholder="digite sua descrição">
+            </div>
+            <input type="submit" class='bt' value="Procurar Partida">
+            <div class="fim">
+                <h5>https://github.com/kevin3033</h5>
+            </div>
+        </form>
     </body>
 </html>
