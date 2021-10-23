@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+}
+
+.table {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#casa {
+    width: 48px;
+    height: 48px;
+    border: 0.5px solid black;
+    text-align: center;
+}
+#casa:hover {
+    border-color: blue;
+}
+
+.peca {
+    font-size: 17px;
+    font-style: oblique;
+    font-weight: 300;
+    font-family: sans-serif;
+    width: 30px;
+    margin: 11px auto;
+}
+.pecaminha {
+    font-size: 17px;
+    font-style: oblique;
+    font-weight: 300;
+    font-family: sans-serif;
+    border: 0.1px solid black;
+    width: 30px;
+    margin: 11px auto;
+}
+
+.casapreto {
+    background-color: gray;
+
+}
+
+.casabranco {
+    background-color: white;
+}
+
+#barra {
+    margin: 0 auto;
+    width: 400px;
+    height: 50px;
+    border: 0.5px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.barrapreta {
+    background-color: gray;
+}
+
+.barrabranca {
+    background-color: white;
+}

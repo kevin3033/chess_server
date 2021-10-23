@@ -4,7 +4,7 @@
   "description": "jogo de xadrez",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node server.js"
   },
   "repository": {
     "type": "git",
