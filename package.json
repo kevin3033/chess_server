@@ -1,0 +1,27 @@
+{
+  "name": "chess_socket",
+  "version": "1.0.0",
+  "description": "jogo de xadrez",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin3033/chess_server.git"
+  },
+  "keywords": [
+    "chess",
+    "socket"
+  ],
+  "author": "kevin3033",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevin3033/chess_server/issues"
+  },
+  "homepage": "https://github.com/kevin3033/chess_server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket-io": "^1.0.0"
+  }
+}
