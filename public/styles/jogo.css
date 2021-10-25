@@ -24,7 +24,15 @@ body {
     font-size: 17px;
     font-style: oblique;
     font-weight: 300;
-    font-family: sans-serif;
+    font-family: arial;
+    width: 30px;
+    margin: 11px auto;
+}
+.sempeca {
+    font-size: 17px;
+    font-style: oblique;
+    font-weight: 300;
+    font-family: arial;
     width: 30px;
     margin: 11px auto;
 }
@@ -32,8 +40,7 @@ body {
     font-size: 17px;
     font-style: oblique;
     font-weight: 300;
-    font-family: sans-serif;
-    border: 0.1px solid black;
+    font-family: arial;
     width: 30px;
     margin: 11px auto;
 }

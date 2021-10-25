@@ -7,7 +7,7 @@ body {
     width: 400px;
     height: 500px;
     background-color: white;
-
+    text-align: center;
 }
 
 .titlediv {
@@ -22,12 +22,41 @@ h1 {
     font-family: sans-serif;
 }
 
-.salas {
-    width: 100%;
-    height: 200px;
-    background-color: white;
-    border-bottom: 1px solid black;
+#select_room {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
 }
+
+
+#h3 {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+h3 {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#sala {
+    width: 100%;
+    height: 25px;
+    border: 1px solid green;
+    margin-bottom: 5px;
+}
+#sala:hover {
+    width: 100%;
+    height: 25px;
+    border: 1px solid blue;
+    margin-bottom: 5px;
+}
+
 .inputs {
     width: 100%;
     height: 100px;

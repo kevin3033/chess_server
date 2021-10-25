@@ -4,23 +4,54 @@
         <meta charset="utf-8">
         <title>jogo de xadrez</title>
         <link rel="stylesheet" href="./styles/index.css">
+        <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
         <form class="container" action="sala" method="get">
             <div class="titlediv">
                 <h1>Jogo de xadrez</h1>
             </div>
-            <div class="salas">
-                <h3>0 salas</h3>
-            </div>
+
             <div class="inputs">
                 <input type="text" class='subname' name="nome" placeholder="digite seu nickname">
                 <input type="text" name="descricao" class='subdes' placeholder="digite sua descrição">
             </div>
+            <select name="sala" id="select_room">
+                    <option class="sala0" value="" selected disabled>sala 5 disponíveis</option>
+                    <option class="sala1" value="sala1">sl1</option>
+                    <option class="sala2" value="sala2">sl2</option>
+                    <option class="sala3" value="sala3">sl3</option>
+                    <option class="sala4" value="sala4">sl4</option>
+                    <option class="sala5" value="sala5">sl5</option>
+            </select>
+
             <input type="submit" class='bt' value="Procurar Partida">
             <div class="fim">
                 <h5>https://github.com/kevin3033</h5>
             </div>
         </form>
+        <script type="text/javascript">
+            const socket = io()
+
+            socket.emit('getinfo', {})
+            /****interface sala:*****
+              {
+                  id: Int,
+                  turno: string,
+                  player1: obj,
+                  player2: obj,
+                  partida: Chess,
+                  tabuleiro: obj
+
+              }
+            ***********************/
+            socket.on('info', data => {
+                console.log(data);
+                document.querySelector('.sala0').innerHTML = `${data.salasDisponiveis} salas disponíveis`
+                for (let i = 0; i < 5; i++) {
+                    document.querySelector(`.sala${i+1}`).innerHTML = `SALA ${i+1} - ${data.salas[i].player1.nome == null ? 'ninguém' : data.salas[i].player1.nome} x ${data.salas[i].player2.nome == null ? 'ninguém' : data.salas[i].player2.nome}`
+                }
+            })
+        </script>
     </body>
 </html>
